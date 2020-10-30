@@ -1,70 +1,11 @@
 <!DOCTYPE html>
-<html lang="da">
-<head>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-  <link rel="shortcut icon" href="https://tjalfe-filer.000webhostapp.com/squarewar/logo.png" />
-  <meta charset="UTF-8">
-  <title>Square War</title>
-  <link rel="stylesheet" href="https://tjalfe-filer.000webhostapp.com/squarewar/css/jquery-ui.css">
-  <link rel="stylesheet" href="https://tjalfe-filer.000webhostapp.com/squarewar/css/style.css">
-</head>
-<body onload="regler();setTimeout(()=>{by()},5000);setTimeout(()=>{copy();},10000);">
-  <!-- partial:index.partial.html -->
-  <button onclick="nextWave();" id="nextWaveBtn" title="Shortcode: ArrowKeyRight">Next War</button>
-  <button onclick="specialAttack();" id="specialAttackBtn" title="Shortcode: Space">Special Attack</button>
-  <code>Special attack: </code>
-  <label for="wall">Bullet wall</label>
-  <input type="radio" name="attack" id="wall" checked>
-  <label for="spiral">Spiral</label>
-  <input type="radio" name="attack" id="spiral">
-  <label for="sniperSkill">Sniper skill</label>
-  <input type="radio" name="attack" id="sniperSkill">
-  <br/><br/><br/>
-  <div id="info"></div>
-  <label for="showrange">Show range</label>
-  <input type="checkbox" id="showrange">
-  <br>
-  <label for="normal" title="Shortcode: 1">&#x1F52B; Normal 20$</label>
-  <input type="radio" name="tower" id="normal">
+<html lang="da" dir="ltr">
+  <head>
+    <link rel="shortcut icon" href="https://tjalfe-filer.000webhostapp.com/squarewar/logo.png" />
+    <meta charset="utf-8">
+    <title>TtBbSs</title>
+  </head>
+  <body>
 
-  <label for="poison" title="Shortcode: 2">&#x2620; Poison 35$</label>
-  <input type="radio" name="tower" id="poison">
-
-  <label for="flamethrower" title="Shortcode: 3">&#x1F525; Flamethrower 40$</label>
-  <input type="radio" name="tower" id="flamethrower">
-
-  <label for="minigun" title="Shortcode: 4">Minigun 30$</label>
-  <input type="radio" name="tower" id="minigun">
-
-  <label for="sniper" title="Shortcode: 5">&#x25CE; Sniper 60$</label>
-  <input type="radio" name="tower" id="sniper">
-
-  <label for="shotgun" title="Shortcode: 6">Shotgun 100$</label>
-  <input type="radio" name="tower" id="shotgun">
-
-  <label for="select" title="Shortcode: 0">&#x270B; Hand</label>
-  <input type="radio" name="tower" id="select">
-
-  <canvas id="canvas" width="1250" height="400" onclick="placeTower();"></canvas>
-  <div>
-    <button style="" type="button" onclick="heal(1);">&#x2764; Heal 1 lives for 2$</button>
-    <button style="" type="button" onclick="livestogold();">&#x2764; Lives for gold &#129351;</button>
-  </div>
-
-  <div id="dialog">
-    <div id="dialog-msg"></div>
-  </div>
-  <!-- partial -->
-  <script src="https://tjalfe-filer.000webhostapp.com/squarewar/js/jquery.min.js"></script>
-  <script src="https://tjalfe-filer.000webhostapp.com/squarewar/js/jquery-ui.min.js"></script>
-  <script src="https://tjalfe-filer.000webhostapp.com/squarewar/js/script.js"></script>
-  <script src="https://tjalfe-filer.000webhostapp.com/squarewar/js/regler.js" charset="utf-8"></script>
-  <script src="https://tjalfe-filer.000webhostapp.com/squarewar/js/inspect.js" charset="utf-8"></script>
-  <script src="https://tjalfe-filer.000webhostapp.com/squarewar/js/inspect.js" charset="utf-8"></script>
-  <script src="https://tjalfe-filer.000webhostapp.com/squarewar/js/selecttowers.js" charset="utf-8"></script>
-  <br/><br/><br/><br/><br/>
-  <footer>&copy; by TBS</footer>
-</body>
+  </body>
 </html>
