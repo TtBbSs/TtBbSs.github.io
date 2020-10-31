@@ -1,0 +1,150 @@
+
+<html>
+  <head>
+    <link rel="icon" href="http://picturelements.github.io/pitchforkemporium/PEicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+    <style>
+      body{
+        background-color:#c1272d;
+        margin:0;
+        pointer-events:none;
+      }
+      #name{
+        display:block;
+        position:fixed;
+        font-family:Kaushan Script,Arial,sans-serif;
+        font-weight:bold;
+        font-size:7.5vw;
+        width:100%;
+        height:10vw;
+        top:-10%;
+        margin-top:-12vw;
+        text-align:center;
+        pointer-events:auto;
+        z-index:10;
+      }
+
+      #name a{
+        color: white !important;
+        text-decoration: none !important;
+        text-shadow: 5px 5px 0 #961F1F;
+        transition: 300ms;
+        z-index:10;
+      }
+
+      #name a:hover{
+        text-shadow: 10px 10px 10px #961F1F;
+        transition:300ms;
+      }
+
+      #line{
+        position:fixed;
+        display:block;
+        width:0%;
+        left:50%;
+        height:2px;
+        top:50%;
+        margin-top:-1px;
+        background-color:white;
+        z-index:10;
+      }
+
+      #blocker{
+        display:block;
+        position:fixed;
+        width:100%;
+        height:50%;
+        top:0;
+        background-color:#c1272d;
+        z-index:0;
+      }
+
+      .options{
+        display:block;
+        position:relative;
+        font-family:Roboto,Arial,sans-serif;
+        color:white;
+        font-size:3vw;
+        top:30%;
+        text-align:center;
+        float:left;
+        z-index:-2;
+      }
+
+      .options a{
+        color:white;
+        text-decoration:none;
+        pointer-events:auto;
+        margin-left:1vw;
+        margin-right:1vw;
+        z-index:-1;
+      }
+
+      .options a:hover{
+        color:#bbb;
+      }
+
+      #optionContainer{
+        position:fixed;
+        display:block;
+        top:0;
+        left:30%;
+        min-width:10px;
+        height:100%;
+        z-index:-1;
+      }
+
+      @keyframes drop{
+        80%{top:60%;}
+        100%{top:50%;}
+      }
+
+      @keyframes expand{
+        80%{width:74%; left:13%;}
+        100%{width:70%; left:15%;}
+      }
+
+      @keyframes dropdown{
+        to{top:54%;}
+      }
+    </style>
+    <script>
+      function setAlign(){
+        console.log(document.getElementById("optionContainer").style.width);
+        console.log(document.getElementById("optionContainer").width);
+      }
+      function setAni(){
+        console.log("GOT HERE!");
+        document.getElementById("name").style.animation="drop 1s forwards 0.5s 1"
+        document.getElementById("line").style.animation="expand 1s forwards 1.5s 1"
+        var stuff=document.getElementsByClassName("options");
+        for (i=0;i<stuff.length;i++){
+          stuff[i].style.animation="dropdown 1s forwards "+(1.7+0.15*i)+"s 1";
+        }
+      }
+    </script>
+  </head>
+  <body onload=setAni()>
+    <div id="name"><a href="#">Blomster Biblioteket</a></div>
+    <div id="line"></div>
+    <div id="blocker"></div>
+    <div id="optionContainer">
+      <div class="options">
+        <a href="https://blomster-biblioteket.000webhostapp.com/">log ind</a>
+      </div>
+      <div class="options" style="opacity:0.4">|</div>
+      <div class="options">
+        <a href="https://blomster-biblioteket.000webhostapp.com/laan">l&aring;n</a>
+      </div>
+      <div class="options" style="opacity:0.4">|</div>
+      <div class="options">
+        <a href="https://blomster.biblioteket.000webhostapp.com/shop">matrialer</a>
+      </div>
+      <div class="options" style="opacity:0.4">|</div>
+      <div class="options">
+        <a href="https://blomster-biblioteket.000webhostapp.com/about">om</a>
+      </div>
+    </div>
+  </body>
+</html>
