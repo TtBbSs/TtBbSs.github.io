@@ -770,7 +770,7 @@ function resetNames(){
 function openPopup(errtitle,errStr,icon){
   icon=icon || "err";
   programData[errID].icon.svg=icon+"_icon";
-  addWindow(errID,errtitle,errStr,25,9);
+  addWindow(errID,errtitle,errStr,30,9);
 }
 
 function showSearchFull(evt){
@@ -1043,16 +1043,20 @@ function togglePower(){
 }
 
 function restart(){
+  var shutdown = new Audio('sound/shutdown.mp3');
+  shutdown.play();
   var elem=document.getElementById("loadscreen");
   elem.innerHTML=document.getElementById("loadscreenbuffer").innerHTML;
-  elem.getElementsByClassName("loadmsg")[0].innerHTML="Shutting down";
+  elem.getElementsByClassName("loadmsg")[0].innerHTML="Genstarter";
   elem.style="display:flex; opacity:0; animation:fadescreen 3500ms forwards 1; animation-delay:250ms;";
-  setTimeout(function(){elem.innerHTML=inner;},500);
+  setTimeout(function(){},700);
   setTimeout(function(){elem.style.backgroundColor="black"; elem.innerHTML=""},3750);
   setTimeout(function(){location.reload();},4000);
 }
 
 function powerOff(evt){
+  var shutdown = new Audio('sound/shutdown.mp3');
+  shutdown.play();
   var elem=document.getElementById("loadscreen");
   elem.innerHTML=document.getElementById("loadscreenbuffer").innerHTML;
   elem.getElementsByClassName("loadmsg")[0].innerHTML="Slukker PeOS";
@@ -1910,7 +1914,7 @@ navigator.getBattery().then(function(battery) {
     var lvl=Math.floor(battery.level*100);
     var charging=battery.charging&&lvl!=100;
     batt.setAttribute("charging",charging);
-    document.getElementById("batterywrapper").setAttribute("data-title",lvl+"% charged"+(charging?" (charging)":""));
+    document.getElementById("batterywrapper").setAttribute("data-title",lvl+"% opladt"+(charging?" (oplader)":""));
     batt.getElementsByClassName("batteryindicator")[0].setAttribute("width",lvl);
     if (lvl==10&&!charging){
       openPopup("Batteriniveau lavt","Batteriniveauet er lavt (10%). Det anbefales, at du oplader din computer.");
