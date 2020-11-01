@@ -361,7 +361,7 @@ body.scaling .content{
   position: relative;
   color: #444;
   left: 4.5em;
-  width: 18.5em;
+  width: 22em;
   min-height: 0;
   flex-wrap: wrap;
   align-self: center;
@@ -375,7 +375,7 @@ body.scaling .content{
   display: flex;
   background-color: #e5e5e5;
   border: none;
-  width: 5vw;
+  width: 8vw;
   height: 1.5vw;
   margin-right: 0.5vw;
   margin-top: 0.5vw;
