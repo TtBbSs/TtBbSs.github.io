@@ -87,6 +87,7 @@ var programData=[
   {name: "Dodge", url: "https://picturelements.github.io/games/dodge", icon: {url:"dodge"}, keywords: "game,reddit,cursor,slide"},
   {name: "PeNote", url: "apps/PeNote.html", icon: {url:"penote"}, keywords: "about,meta,info,text,document,txt,PeOS"},
   {name: "cmd", url: "apps/cmd.html", icon: {url:"cmd"}, keywords: "cmd,terminal,console"},
+  {name: "Squarewar", url: "apps/squarewar.html", icon: {url: "squarewar"}, keywords: "war,squarewar,square"},
   {name: "Viewer", url: "", icon: {url:"viewer"}, keywords: ""},
   {name: "Console", url: "", icon: {url:"console"}, keywords: ""},
   {name: "Prompt", url: "", icon: {svg:"info_icon"}, keywords: ""},
