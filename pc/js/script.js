@@ -65,7 +65,7 @@ var programData=[
   {name: "Home", url: "index.html", icon: {url:"home"}, keywords: "home,homepage,index,information"},
   {name: "Sudoku Solver", url: "https://picturelements.github.io/sudokuSolver", icon: {url:"sudokusolver"}, keywords: "sudoku,solver,games,interactive"},
   {name: "Mandelbrot", url: "https://picturelements.github.io/mandelbrot", icon: {url:"mandelbrot"}, keywords: "mandelbrot,julia,set,generator,fractal,interactive,math,canvas"},
-  {name: "Blomster Biblioteket", url: "apps/shop.html", icon: {url:"pitchforkemporium"}, keywords: "bb,bbp,blomster,bibliotek"},
+  //{name: "Blomster Biblioteket", url: "apps/shop.html", icon: {url:"pitchforkemporium"}, keywords: "bb,bbp,blomster,bibliotek"},
   {name: "Boids", url: "https://aquaplexus.net/fishSim", icon: {url:"boids"}, keywords: "boids,craig,reynolds,interactive,fish,simulation"},
   {name: "HTML Editor", url: "https://picturelements.github.io/editor", icon: {url:"htmleditor"}, keywords: "html,editor,css,interactive,gadget"},
   {name: "Bézier", url: "https://picturelements.github.io/bezier", icon: {url:"bezier"}, keywords: "bezier,bézier,interactive,gadget"},
