@@ -1,0 +1,2 @@
+<iframe name="lb24" frameborder="0" height="960px" loading="lazy" width="100%" class="lb24-iframe" scrolling="auto" src="//v.24liveblog.com/iframe/?id=2746420977978553508"></iframe>
+<script src="https://v.24liveblog.com/iframe.js"></script>
